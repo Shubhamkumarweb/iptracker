@@ -61,7 +61,7 @@ fetch(url).then(res=>{
 const setmap=()=>{
 
     if (map != undefined) { map.remove(); }
-        // console.log(lat,lng)
+        console.log(lat,lng)
         map = L.map('map').setView([lat,lng], 13);
         L.tileLayer(tileurl, {attribution}).addTo(map);
         L.marker([lat,lng]).addTo(map);

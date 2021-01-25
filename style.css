@@ -61,12 +61,12 @@ transform: translateY(5px);
 {
     display: flex;
     width:clamp(350px, 90vw,900px);
-    padding:10px;
+    padding:10px 0;
     background: white;
     margin:0px auto;
     border-radius: 20px;
     box-shadow: 10px 2px 10px 1px rgba(0, 0, 0, 0.233);
-transform: translateY(-50%);
+transform: translateY(-60px);
 z-index: 550;
 justify-content: center;
 

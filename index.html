@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+ <header>
+   <h1>IP Address Tracker</h1>
+   <p>Get an IP location (e.g 8.8.8.8 or google.com or your email). Default IP is your current network IP</p>
+   <div id="Ipinput">
+     <input type="text" onchange="enterip()" placeholder="Search for any IP address">
+     <div id="btn" onclick="showmap()"><img src="images/icon-arrow.svg" alt=""></div>
+   </div>
+ </header>
+<div class="main">
+  <div id="output">
+    <div class="card"><div id="title">IP Address</div>
+  <div id="ipaddress" class="text"></div>
+  </div>
+    <div class="card"><div id="title">Location</div>
+  <div id="location" class="text"></div>
+  </div>
+    <div class="card"><div id="title">Timezone</div>
+  <div id="timezone" class="text"></div>
+  </div>
+    <div class="card"><div id="title">ISP</div>
+  <div id="isp" class="text"></div>
+  </div>
+  </div>
+  <div id="map"></div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>

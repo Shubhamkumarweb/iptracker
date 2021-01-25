@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+
+}
+body{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Rubik",sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+header
+{
+min-height:250px;
+height:25%;
+width:100%;
+display: flex;
+flex-direction: column;
+place-items: center;
+background: url("./images/pattern-bg.png") no-repeat;
+
+}
+h1{
+    margin-top:20px;
+    color:white;
+    font-weight: 500;
+}
+p{
+    margin: 10px 0;
+    color:white;
+    font-size: 14px;
+}
+
+#Ipinput
+{
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+input{
+    padding:10px 20px;
+    border: none;
+    outline: none;
+    width:clamp(250px, 50vw, 400px);
+    height:30px;
+    border-radius: 12px 0 0 12px;
+}
+#btn
+{
+    background-color: black;
+    padding:10px 20px;
+    place-items: center;
+}
+#btn img
+{
+transform: translateY(5px);
+}
+#output
+{
+    display: flex;
+    width:clamp(350px, 90vw,800px);
+    padding:10px;
+    background: white;
+    margin:0px auto;
+    border-radius: 20px;
+    box-shadow: 10px 2px 10px 1px rgba(0, 0, 0, 0.233);
+transform: translateY(-50%);
+z-index: 550;
+justify-content: center;
+
+}
+.main
+{
+    position: relative;
+    width:100vw;
+}
+.card
+{
+    padding:20px;
+    text-align: center;
+    font-weight: 500;
+    width:25%;
+    margin:auto;
+}
+#title
+{
+    color:hsl(0, 0%, 59%);
+    margin:10px 0;
+    font-size: 14px; 
+    text-align: left;
+}
+.text,input:not(:placeholder-shown){
+font-size: 22px;
+font-weight: 700;
+color:hsl(0, 0%, 17%);
+}
+#map
+{
+    min-height:480px;
+    height:75vh;
+    width:100vw;
+    position: absolute;
+    top:0;
+    background-color: grey;
+    z-index: -1;
+}
+@media (max-width:800px){
+    #output
+    {
+        flex-direction: column;
+        text-emphasis: center;
+    }
+    .card{
+        width:90vw;
+        max-width: 500px;
+        padding:0;
+        border: none;
+    }
+    #title
+    {
+        text-align: center;
+        /* font-size: 15px; */
+        margin:0;
+        margin-bottom:10px;
+    }
+    .text
+    {
+        font-size: 18px;
+    }
+}
